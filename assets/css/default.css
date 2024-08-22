@@ -66,6 +66,13 @@ body {
     align-items: center;
     height: max-content;
     background-color: rgb(241, 241, 241);
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    user-select: none;
+=======
+>>>>>>> 50edbd6d6aad7214906803b047fb28d096f36c34
+>>>>>>> Stashed changes
 }
 
 .our_section_part_inner {
