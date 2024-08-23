@@ -93,6 +93,7 @@ body {
         background-size: 1.7em;
         background-repeat: no-repeat;
         cursor: pointer;
+
         &:hover {
             transition: all ease 0.2s;
             filter: brightness(10%);
@@ -146,6 +147,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+
             &>img {
                 max-width: 3em;
             }
@@ -161,19 +163,21 @@ body {
 .our_section_part_main_right {
     width: 100%;
 }
+
 .feature_right {
     width: 100%;
     height: max-content;
     padding-left: 3em;
-    &>.feature_right_element:not(:first-child){
-        margin-top:2em ;
+
+    &>.feature_right_element:not(:first-child) {
+        margin-top: 2em;
     }
 }
 
 .feature_right_element {
     height: 13.3em;
     display: flex;
-    
+
 }
 
 .feature_right_element_left {
@@ -207,8 +211,10 @@ body {
         font-size: 1em;
         text-align: center;
     }
+
     z-index: 1;
-    &::before{
+
+    &::before {
         z-index: 0;
         content: '';
         background-color: rgb(199, 199, 199);
@@ -218,7 +224,8 @@ body {
         rotate: 90deg;
         top: 12.9em;
     }
-    &::after{
+
+    &::after {
         content: '';
         background-image: url('https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/Arrow.png');
         background-repeat: no-repeat;
@@ -230,11 +237,13 @@ body {
         height: 1.6em;
     }
 }
-#feature_right_element_left_title_btn3{
-    &::before{
-        display: none ;
+
+#feature_right_element_left_title_btn3 {
+    &::before {
+        display: none;
     }
-    &::after{
+
+    &::after {
         display: none;
     }
 }
@@ -244,8 +253,9 @@ body {
     position: relative;
     top: 1em;
 }
-.feature_right_element_left_title_btn_arr_3{
-    top:0em !important;
+
+.feature_right_element_left_title_btn_arr_3 {
+    top: 0em !important;
 }
 
 .feature_right_element_right {
@@ -254,45 +264,117 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 4em;
-    &::after{
+
+    &::after {
         content: '';
         background-color: rgb(199, 199, 199);
         width: 49.1%;
+        max-width: 50em;
         height: 0.4em;
         z-index: 0;
         position: absolute;
     }
 }
-.features_dot{
-    z-index: 1;
-border: 2px solid rgb(244, 80, 95);
-width: 2.2em;
-height: 2.2em;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-&:hover{
-    border: 3px solid rgb(244, 80, 95);
 
+.features_dot {
+    z-index: 1;
+    border: 2px solid rgb(244, 80, 95);
+    width: 2.2em;
+    height: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        border: 3px solid rgb(244, 80, 95);
+    }
+
+    &>div {
+        background-color: rgb(244, 80, 95);
+        width: 80%;
+        height: 80%;
+    }
 }
-&>div{
-    background-color: rgb(244, 80, 95);
-    width: 80%;
-    height: 80%;
-}
-}
-.feature_right_element_right_featurs_btn_an_text{
+
+.feature_right_element_right_featurs_btn_an_text {
     height: 5em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
     bottom: 1em;
-    &>h4{
+
+    &>h4 {
         font-size: smaller;
     }
-    
+
+}
+
+.our_section_part_main_right_phones {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    flex-direction: column;
+}
+
+.feature_phone_section_pa {
+    &>section {
+        border: 2.4px solid rgb(199, 199, 199);
+        height: 5em;
+        width: 100%;
+        max-width: 35em;
+        background-image: url('/img/right_arr_icon.svg');
+        background-position: 95%;
+        background-repeat: no-repeat;
+        background-size: 2em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1em;
+        padding-right: 3em;
+        &>img{
+            max-width: 2em;
+        }
+        &>h4{
+            font-size: 1em;
+            margin-left: 1em;
+        }
+    }
+}
+
+.feature_phone_section_pa_btn_ {
+    &>div {
+        display: flex;
+        padding: 1.5em 2em;
+        justify-content: center;
+        align-items: center;
+        &>h4{
+            font-size: medium;
+            margin-left: 1em;
+        }
+        &>section {
+            border: 2px solid rgb(244, 80, 95);
+            width: 2.2em;
+            height: 2.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                border: 3px solid rgb(244, 80, 95);
+            }
+        }
+
+        &>section>div {
+            background-color: rgb(244, 80, 95);
+            width: 80%;
+            height: 80%;
+        }
+    }
 }
 
 
@@ -311,7 +393,19 @@ cursor: pointer;
 
 
 
-@media (max-width: 720px) {
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 880px) {
     .our_section_part_title_an_nav {
         &>h2 {
             font-size: 30px;
@@ -324,6 +418,11 @@ cursor: pointer;
 
     .our_section_part_main {
         flex-direction: column;
+    }
+
+    .our_section_part_main_left {
+        /* display: flex;
+        justify-content: center; */
     }
 
     .feature-wrap {
@@ -354,36 +453,25 @@ cursor: pointer;
         width: 100%;
     }
 
-    .feature_right_element_left_title_btn{
-        flex-direction: row;
-        &>h4 {
-            width: 60%;
-            min-height: 5em;
-            text-align: left;
-            align-content: center;
-        }
-        &::after{
-            display: none;
-        }
-        &::before{
-            display: none;
-        }
-    }
-    .feature_right_element,.feature_right_element_right{
-        flex-direction: column;
-    }
-    .feature_right_element_right{
-        &::after{
-            display: none;
-        }
-        &>.features_dot:not(:first-child){
-
-        }
-    }
-    #feature_right_element_left_title_btn_arr{
-        top: 0em;
-    }
-    /* .feature_right_element_right{
+    .our_section_part_main_right {
         display: none;
-    } */
+    }
+
+    .our_section_part_main_right_phones {
+        display: flex;
+    }
+}
+@media (max-width: 480px) {
+.feature_phone_section_pa {
+    &>section {
+        padding-right: 2.5em;
+        &>img{
+            max-width: 2em;
+        }
+        &>h4{
+            font-size: 1em;
+            margin-left: 1em;
+        }
+    }
+}
 }
