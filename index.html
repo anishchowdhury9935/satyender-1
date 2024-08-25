@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="profile" href="https://gmpg.org/xfn/11" />
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
   <title>
@@ -852,11 +855,61 @@
   class="home page-template page-template-templates page-template-template-homepage page-template-templatestemplate-homepage-php page page-id-40 wp-custom-logo group-blog elementor-default elementor-kit-428 elementor-page elementor-page-40">
   <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
     <!--===// Start: Header
-    =================================-->
+      =================================-->
 
     <header id="header-section" class="header header-one">
+      <!-- ourServices_modal modal part-->
+      <div class="ourServices_modal" id="ourServices_modal">
+        <div class="ourServices_modal_middle_box">
+          <div class="ourServices_modal_middle_box_close_section">
+            <div onclick="(()=>{
+                    document.getElementById('ourServices_modal').style.display = 'none';
+                  })()">×</div>
+          </div>
+          <div class="ourServices_modal_middle_box_content">
+            <div id="ourServices_modal_middle_box_content_title">
+              <!-- Technology Scouting & Monitoring -->
+            </div>
+            <div id="ourServices_modal_middle_box_content_description">
+              <!-- Dissect the emerging and transforming
+technology space that offers new
+opportunities and threats for your sector and
+organization -->
+            </div>
+            <div id="ourServices_modal_middle_box_content_points">
+              <!-- <section>
+                      <p>-</p>
+                      <h4>Technology Intelligence</h4>
+                    </section>
+                    <section>
+                      <p>-</p>
+                      <h4>Idea Funnel Management</h4>
+                    </section>
+                    <section>
+                      <p>-</p>
+                      <h4>Idea Funnel Management</h4>
+                    </section>
+                    <section>
+                      <p>-</p>
+                      <h4>Idea Funnel Management</h4>
+                    </section>
+                    <section>
+                      <p>-</p>
+                      <h4>Idea Funnel Management</h4>
+                    </section>
+                    <section>
+                      <p>-</p>
+                      <h4>Idea Funnel Management</h4>
+                    </section>
+                    <section>
+                      <p>-</p>
+                      <h4>Idea Funnel Management</h4>
+                    </section> -->
+            </div>
+          </div>
+        </div>
+      </div>
       <!--===// Start: Header Above
         =================================-->
       <div id="above-header" class="header-above-info d-av-block d-none wow fadeInDown">
@@ -1524,6 +1577,7 @@
         </div>
       </div>
     </section>
+
     <section class="our_section_part">
       <div class="our_section_part_inner">
         <div class="our_section_part_title_an_nav">
@@ -1588,11 +1642,12 @@
               </div>
             </div>
           </div>
+
           <div class="our_section_part_main_right"><!-- -->
             <div class="feature_right">
               <div class="feature_right_element">
                 <div class="feature_right_element_left">
-                  <div class="feature_right_element_left_title_btn">
+                  <div class="feature_right_element_left_title_btn feature_right_element_left_title_btn1">
                     <img
                       src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/discover.png"
                       alt="img">
@@ -1637,7 +1692,7 @@
               </div>
               <div class="feature_right_element">
                 <div class="feature_right_element_left">
-                  <div class="feature_right_element_left_title_btn">
+                  <div class="feature_right_element_left_title_btn feature_right_element_left_title_btn2">
                     <img
                       src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/Group-357.png"
                       alt="img">
@@ -1683,7 +1738,8 @@
               </div>
               <div class="feature_right_element">
                 <div class="feature_right_element_left">
-                  <div class="feature_right_element_left_title_btn" id="feature_right_element_left_title_btn3">
+                  <div class="feature_right_element_left_title_btn feature_right_element_left_title_btn3"
+                    id="feature_right_element_left_title_btn3">
                     <img
                       src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/implement-black.png"
                       alt="img">
@@ -1732,19 +1788,21 @@
           </div>
           <div class="our_section_part_main_right_phones">
             <div class="feature_phone_section_pa"><!-- -->
-              <section>
-                <img src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/discover.png" alt="">
+              <section class="feature_right_element_left_title_btn1">
+                <img
+                  src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/discover.png"
+                  alt="">
                 <h4>
                   Discovery &
-Actionable Insights
+                  Actionable Insights
                 </h4>
-                
+
               </section>
               <div class="feature_phone_section_pa_btn_">
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1754,7 +1812,7 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1764,7 +1822,7 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1774,7 +1832,17 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
+                    </div>
+                  </section>
+                  <h4>
+                    Foresight & Horizon Planning
+                  </h4>
+                </div>
+                <div> <!-- -->
+                  <section>
+                    <div>
+
                     </div>
                   </section>
                   <h4>
@@ -1784,19 +1852,21 @@ Actionable Insights
               </div>
             </div>
             <div class="feature_phone_section_pa"><!-- -->
-              <section>
-                <img src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/Group-357.png" alt="">
+              <section class="feature_right_element_left_title_btn2">
+                <img
+                  src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/Group-357.png"
+                  alt="">
                 <h4>
                   Discovery &
-Actionable Insights
+                  Actionable Insights
                 </h4>
-                
+
               </section>
               <div class="feature_phone_section_pa_btn_">
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1806,7 +1876,7 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1816,7 +1886,7 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1826,7 +1896,17 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
+                    </div>
+                  </section>
+                  <h4>
+                    Foresight & Horizon Planning
+                  </h4>
+                </div>
+                <div> <!-- -->
+                  <section>
+                    <div>
+
                     </div>
                   </section>
                   <h4>
@@ -1836,19 +1916,21 @@ Actionable Insights
               </div>
             </div>
             <div class="feature_phone_section_pa"><!-- -->
-              <section>
-                <img src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/implement-black.png" alt="">
+              <section class="feature_right_element_left_title_btn3">
+                <img
+                  src="https://cdn-gfcdj.nitrocdn.com/qrrGJpWmpjCjqXVLeiFcclxzCdkAOpud/assets/images/optimized/rev-7e78864/www.futurebridge.com/wp-content/themes/master-theme/images/implement-black.png"
+                  alt="">
                 <h4>
                   Discovery &
-Actionable Insights
+                  Actionable Insights
                 </h4>
-                
+
               </section>
               <div class="feature_phone_section_pa_btn_">
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1858,7 +1940,7 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1868,7 +1950,7 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
                     </div>
                   </section>
                   <h4>
@@ -1878,7 +1960,17 @@ Actionable Insights
                 <div> <!-- -->
                   <section>
                     <div>
-                      
+
+                    </div>
+                  </section>
+                  <h4>
+                    Foresight & Horizon Planning
+                  </h4>
+                </div>
+                <div> <!-- -->
+                  <section>
+                    <div>
+
                     </div>
                   </section>
                   <h4>
@@ -1888,6 +1980,712 @@ Actionable Insights
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="our_client_section_part"> <!-- -->
+      <div class="our_client_section_part_inner_div">
+        <div class="our_client_section_part_client_logo_show">
+          <h4>
+            our clients
+          </h4>
+          <section class="client_logo_images_part">
+            <img src="/img/right_arr_icon.svg" alt="left" id="client_logo_images_part_c_left">
+            <div>
+              <div id="client_logo_images_part_strip_div">
+                <div>
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                  <img src="img/client-logo1.png" alt="clientlogo">
+                  <img src="img/client-logo2.png" alt="clientlogo">
+                  <img src="img/client-logo3.png" alt="clientlogo">
+                  <img src="img/client-logo4.png" alt="clientlogo">
+                  <img src="img/client-logo5.png" alt="clientlogo">
+                  <img src="img/client-logo6.png" alt="clientlogo">
+                  <img src="img/client-logo7.png" alt="clientlogo">
+                  <img src="img/client-logo8.png" alt="clientlogo">
+                </div>
+              </div>
+            </div>
+            <img src="/img/right_arr_icon.svg" alt="right" id="client_logo_images_part_c_right">
+          </section>
+        </div>
+      </div>
+      <div class="our_client_section_part_image_an_text_show">
+        <h4>Some Words From Our Happy Clients</h4>
+        <div class="our_client_section_part_image_an_text_show_in">
+          <img src="/img/right_arr_icon.svg" alt="left" id="client_about_client_part_c_left" class="animate__animated animate__fadeInLeft">
+          <section>
+            <div id="our_client_info_strip_move">
+              <div><!-- -->
+                <div>
+                  <img src="https://sagaciousresearch.com/wp-content/uploads/Barry-1-1.jpg" alt="">
+                </div>
+                <section>
+                  <h4 class="animate__animated animate__fadeInDown">
+                    Aaron Frankel, Partner, Kramer Levin Naftalis & Frankel LLP
+                  </h4>
+                  <p class="animate__animated animate__fadeIn">
+                    We used Sagacious IP for several patentability searches and were very happy with the thorough
+                    results, the
+                    quick turn-around, and the reasonable pricing. We will definitely use Sagacious IP again.
+                  </p>
+                </section>
+              </div>
+            </div>
+          </section>
+          <img src="/img/right_arr_icon.svg" alt="left" id="client_about_client_part_c_right">
+        </div>
+      </div>
+    </section>
+    <section class="our_team_section_part">
+      <div class="our_team_section_part_inner">
+        <div class="our_team_section_part_header">
+          <h2>
+            Our Team
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.
+          </p>
+        </div>
+        <div class="our_team_section_team_cards_div" id="our_team_section_team_cards_div">
+          <figure id="our_team_section_team_cards_div_child_1">
+            <section>
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_5.jpg" alt="">
+            <div>
+              <h3>Satyender kumar</h3>
+              <p>Co-founder</p>
+            </div>
+          </figure>
+          
+          <figure id="our_team_section_team_cards_div_child_2">
+            <section>
+              
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_6.jpg" alt="">
+            <div>
+              <h3>Ajay Dubey</h3>
+              <p>Team Lead</p>
+            </div>
+          </figure>
+          
+          <figure id="our_team_section_team_cards_div_child_3">
+            <section>
+              
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_7.jpg" alt="">
+            <div>
+              <h3>Kaiara Spencer</h3>
+              <p>Product Manager</p>
+            </div>
+          </figure>
+          
+          <figure id="our_team_section_team_cards_div_child_4">
+            <section>
+              
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_8.jpg" alt="">
+            <div>
+              <h3>Kaiara Spencer</h3>
+              <p>Product Manager</p>
+            </div>
+          </figure>
+          
+          <figure id="our_team_section_team_cards_div_child_5">
+            <section>
+              
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_1.jpg" alt="">
+            <div>
+              <h3>Kaiara Spencer</h3>
+              <p>Product Manager</p>
+            </div>
+          </figure>
+          
+          <figure id="our_team_section_team_cards_div_child_6">
+            <section>
+              
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_2.jpg" alt="">
+            <div>
+              <h3>Kaiara Spencer</h3>
+              <p>Product Manager</p>
+            </div>
+          </figure>
+          
+          <figure id="our_team_section_team_cards_div_child_7">
+            <section>
+              
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_3.jpg" alt="">
+            <div>
+              <h3>Kaiara Spencer</h3>
+              <p>Product Manager</p>
+            </div>
+          </figure>
+          
+          <figure id="our_team_section_team_cards_div_child_8">
+            <section>
+              
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/twitter-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/linkedin-brands-solid.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="img/instagram-brands-solid.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <img src="https://themewagon.github.io/nitro2/images/person_4.jpg" alt="">
+            <div>
+              <h3>Kaiara Spencer</h3>
+              <p>Product Manager</p>
+            </div>
+          </figure>
+          
         </div>
       </div>
     </section>
