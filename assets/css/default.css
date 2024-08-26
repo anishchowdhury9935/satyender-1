@@ -762,7 +762,7 @@ body::-webkit-scrollbar {
     font-weight: 600;
     &:hover{
         background-color: black !important;
-        color: white !important;
+        color: rgb(255, 231, 231) !important;
         font-size: 1.3em;
     }
 }
