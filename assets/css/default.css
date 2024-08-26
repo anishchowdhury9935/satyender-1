@@ -376,7 +376,7 @@ body {
             align-items: center;
             justify-content: center;
             cursor: pointer;
-
+            flex-shrink: 0;
             &:hover {
                 border: 3px solid rgb(244, 80, 95);
             }
