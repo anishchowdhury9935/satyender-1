@@ -179,7 +179,7 @@ client_about_client_part_c_left.addEventListener('click', () => {
         about_client_image_count -= 1
     }
     removeInnerElements('our_client_info_strip_move')
-    createClientTestimonial(our_client_info_strip_move,about_client_image_obj[about_client_image_count]?.img,about_client_image_obj[about_client_image_count]?.title,about_client_image_obj[about_client_image_count].description)
+    createClientTestimonial(our_client_info_strip_move, about_client_image_obj[about_client_image_count]?.img, about_client_image_obj[about_client_image_count]?.title, about_client_image_obj[about_client_image_count].description)
 })
 client_about_client_part_c_right.addEventListener('click', () => {
     if (about_client_image_count >= Object.keys(about_client_image_obj).length - 1) {
@@ -188,17 +188,17 @@ client_about_client_part_c_right.addEventListener('click', () => {
         about_client_image_count += 1
     }
     removeInnerElements('our_client_info_strip_move')
-    createClientTestimonial(our_client_info_strip_move,about_client_image_obj[about_client_image_count].img,about_client_image_obj[about_client_image_count].title,about_client_image_obj[about_client_image_count].description)
+    createClientTestimonial(our_client_info_strip_move, about_client_image_obj[about_client_image_count].img, about_client_image_obj[about_client_image_count].title, about_client_image_obj[about_client_image_count].description)
 })
-setInterval(()=>{
+setInterval(() => {
     if (about_client_image_count >= Object.keys(about_client_image_obj).length - 1) {
         about_client_image_count = 0
     } else {
         about_client_image_count += 1
     }
     removeInnerElements('our_client_info_strip_move')
-    createClientTestimonial(our_client_info_strip_move,about_client_image_obj[about_client_image_count].img,about_client_image_obj[about_client_image_count].title,about_client_image_obj[about_client_image_count].description)
-},10000)
+    createClientTestimonial(our_client_info_strip_move, about_client_image_obj[about_client_image_count].img, about_client_image_obj[about_client_image_count].title, about_client_image_obj[about_client_image_count].description)
+}, 10000)
 
 
 
@@ -209,11 +209,11 @@ const our_team_section_team_cards_div_length_child = our_team_section_team_cards
 
 for (let index = 1; index <= our_team_section_team_cards_div_length_child; index++) {
     const our_team_section_team_cards_div_length_child_ = document.getElementById(`our_team_section_team_cards_div_child_${index}`)
-    our_team_section_team_cards_div_length_child_.addEventListener('mouseenter', () =>{
+    our_team_section_team_cards_div_length_child_.addEventListener('mouseenter', () => {
         const our_team_section_team_cards_div_length_child_ul = document.querySelector(`#our_team_section_team_cards_div_child_${index} > section > ul`)
         our_team_section_team_cards_div_length_child_ul.style.transform = 'translateX(0%)'
     })
-    our_team_section_team_cards_div_length_child_.addEventListener('mouseleave', () =>{
+    our_team_section_team_cards_div_length_child_.addEventListener('mouseleave', () => {
         const our_team_section_team_cards_div_length_child_ul = document.querySelector(`#our_team_section_team_cards_div_child_${index} > section > ul`)
         our_team_section_team_cards_div_length_child_ul.style.transform = 'translateX(-110%)'
     })
@@ -222,32 +222,232 @@ for (let index = 1; index <= our_team_section_team_cards_div_length_child; index
 const feature_right_element_left_title_btn__dot_data = [
     {
         num: 1,
-        title: 'Discovery & Actionable Insights',
-        description: 'Developing a future-proof business line; we help by answering your unknowns, challenging your view of what is possible and by identifying linkages of emerging technologies with existing & new markets',
+        title: 'Foresight & Horizon Planning',
+        description: 'Build a visionary outlook on horizon technologies and market scenarios and map the toolkit necessary to future-proof your business',
+        points: [
+            'Key trends',
+            'Early signals',
+            'Scenarios',
+            'Roadmaps',
+            'Tipping points',
+        ],
     },
     {
         num: 2,
-        title: 'Positioning & Strategy',
-        description: 'Make Informed Selections. Develop Game Plans: We leverage deep rooted techno-commercial insights and work together in developing action plans to help you meet your strategic business objectives.',
+        title: 'Technology Scouting & Monitoring',
+        description: 'Dissect the emerging and transforming technology space that offers new opportunities and threats for your sector and organization',
+        points: [
+            'Technology Intelligence',
+            'Early signals',
+            'Technology Landscapes',
+            'Benchmarking Digital and platform',
+            'technologies',
+        ],
     },
     {
         num: 3,
-        title: 'Implementation & Driving Disruption',
-        description: 'Deliver business impact. We help our clients navigate uncertainties and assist in implementing technologies and business models to solve existing business challenges, address strategic growth objectives or be the disruptors in their markets.',
+        title: 'Opportunity Identification',
+        description: 'Uncover your growth opportunities that leverage complementary assets effectively and enable innovative engagement options',
+        points: [
+            'Unexplored & under-served markets',
+            'Market adjacency',
+            'Unmet needs & whitespaces',
+            'Use-case mapping and novel applications',
+            'Business model innovation',
+            'New ecosystems & partners',
+        ],
+    },
+    {
+        num: 4,
+        title: 'Market Assessment',
+        description: 'Determine the market dynamics and demand scenarios that will impact your time-to-market and potential return on investment',
+        points: [
+            'Market potential & outlook',
+            'Short-mid-long-term scenarios',
+            'Global & regional market landscape',
+            'Buying trends',
+            'Voice-of-customer',
+            'Regulations',
+        ],
+    },
+    {
+        num: 5,
+        title: 'Competitive Intelligence',
+        description: 'Inform your strategy with industry benchmarks and competitive best-practices and avoid costly and predictable missteps',
+        points: [
+            'Competitor assessment & analysis',
+            'Benchmarking',
+            'Supplier scouting',
+            'Roadmaps',
+            'Pricing and Product placement',
+        ],
+    },
+    {
+        num: 6,
+        title: 'Strategy Development',
+        description: 'Chart your path to accessing the defined opportunity by selecting from amongst a series of options in the portfolio with a clear-eyed view of your drivers and barriers',
+        points: [
+            'Game-changing opportunities',
+            'Business model options',
+            'Route to market',
+            'Market entry strategy',
+            'Technology adoption',
+        ],
+    },
+    {
+        num: 7,
+        title: 'Technology, Market & Business Model Evaluation',
+        description: 'Appraise the full slate of technology options, potential markets segments, and possible business models critically to make informed selections',
+        points: [
+            'Technology screening & shortlisting',
+            'Assess promising technology & applications',
+            'Tech availability & value proposition',
+        ],
+    },
+    {
+        num: 8,
+        title: 'Partner Identification & M&A',
+        description: 'Identify the partners who can help you collapse the technology curve, accelerate time-to-market, and get access to right know-how and markets',
+        points: [
+            'Access to unique technology & markets',
+            'Supplier & solution provider landscape',
+            'Target prioritization & selection',
+            'Techno-economic due diligence',
+            'Technology commercialization',
+        ],
+    },
+    {
+        num: 9,
+        title: 'Sustainability',
+        description: 'Transform your operations and boost their viability by optimizing your processes and supply chain through novel strategies',
+        points: [
+            'Circular economy',
+            'Regulations',
+            'Materials availability & pricing',
+            'Supplier ecosystem',
+            'Supply chain innovation',
+            'Cost efficiency & environmental footprint',
+        ],
+    },
+    {
+        num: 10,
+        title: 'Continuous Disruption Monitoring',
+        description: 'Stay abreast of new developments that could impact the viability of your current programs or strategy or hinder your projects’ success',
+        points: [
+            'Ongoing monitoring of select technologies & target markets',
+            'Ecosystem monitoring',
+            'New startups & business models',
+            'Periodic Red Team reviews',
+            'Disruptive opportunities',
+        ],
+    },
+    {
+        num: 11,
+        title: 'Technology Adoption',
+        description: 'Adopt external technologies to solve existing problems, align with your strategic focus, and disrupt the status quo.',
+        points: [
+            'In Depth Technology Mapping',
+            'Value Proposition Assessment',
+            'Technology & Market Validation',
+            'IP Assessment',
+            'Strategic fitment assessment',
+            'Partner ecosystem',
+            'Feasibility',
+            'Prototyping support',
+            'Risk profile & mitigation',
+        ],
+    },
+    {
+        num: 12,
+        title: 'Technology Commercialization',
+        description: 'Identify your technology potential & right fit target segments to commercialize your technology in non-competing areas and build new revenue streams',
+        points: [
+            'Unique, tailor-made technology transfer concepts',
+            'In-depth technology mapping',
+            'Value proposition assessment',
+            'Market identification & validation',
+            'Sales & marketing of technology',
+            'Business model development',
+        ],
+    },
+    {
+        num: 13,
+        title: 'Company / Technology Due Diligence',
+        description: 'Benchmark technologies with others that have similar applications; deep evaluation of suitability, maturity, IP and value proposition of technologies. Strategic fitment evaluation of companies for potential collaborations',
+        points: [
+            'Tech health card',
+            'Strategic fit analysis',
+            'Strategic fit analysis',
+            'Value proposition Analysis',
+            'Risk analysis',
+        ],
+    },
+    {
+        num: 14,
+        title: 'Technology Implementation Ecosystem',
+        description: 'Benchmark technologies with others that have similar applications; deep evaluation of suitability, maturity, IP and value proposition of technologies. Strategic fitment evaluation of companies for potential collaborations',
+        points: [
+            'System Integrator',
+            'Looks like-Works like Prototyping',
+            'Channel partners',
+            'Testing labs',
+        ],
     },
 ]
 
 const feature_right_element_right_featurs_btn_an_text = document.querySelectorAll('.feature_right_element_right_featurs_btn_an_text')
 const feature_right_element_right_featurs_btn_an_text_phone = document.querySelectorAll('.feature_right_element_right_featurs_btn_an_text_phone')
 
+
+
 // biome-ignore lint/complexity/noForEach: <explanation>
-// <arr>.forEach((text) => {
-//     const sectionElement = document.createElement('section');
-//     const paragraphElement = document.createElement('p');
-//     const headingElement = document.createElement('h4');
-//     paragraphElement.textContent = '-';
-//     headingElement.textContent = text;
-//     sectionElement.appendChild(paragraphElement);
-//     sectionElement.appendChild(headingElement);
-//     document.getElementById('ourServices_modal_middle_box_content_points').appendChild(sectionElement);
-// })
+for (let index = 1; index <= feature_right_element_right_featurs_btn_an_text.length; index++) {
+    const element = feature_right_element_right_featurs_btn_an_text[index - 1];
+    element?.addEventListener('click', () => {
+        const data = feature_right_element_left_title_btn__dot_data[index-1];
+        document.getElementById('ourServices_modal').style.display = 'flex'
+        removeInnerElements('ourServices_modal_middle_box_content_points')
+        ourServices_modal_middle_box_content_title.textContent = ''
+        ourServices_modal_middle_box_content_title.textContent = data.title
+        ourServices_modal_middle_box_content_description.textContent = ''
+        ourServices_modal_middle_box_content_description.textContent = data.description
+
+        // biome-ignore lint/complexity/noForEach: <explanation>
+        data.points.forEach((text) => {
+                const sectionElement = document.createElement('section');
+                const paragraphElement = document.createElement('p');
+                const headingElement = document.createElement('h4');
+                paragraphElement.textContent = '-';
+                headingElement.textContent = text;
+                sectionElement.appendChild(paragraphElement);
+                sectionElement.appendChild(headingElement);
+                document.getElementById('ourServices_modal_middle_box_content_points').appendChild(sectionElement);
+            })
+            
+    })
+}
+for (let index = 1; index <= feature_right_element_right_featurs_btn_an_text_phone.length; index++) {
+    const element = feature_right_element_right_featurs_btn_an_text_phone[index - 1];
+    element?.addEventListener('click', () => {
+        const data = feature_right_element_left_title_btn__dot_data[index-1];
+        document.getElementById('ourServices_modal').style.display = 'flex'
+        removeInnerElements('ourServices_modal_middle_box_content_points')
+        ourServices_modal_middle_box_content_title.textContent = ''
+        ourServices_modal_middle_box_content_title.textContent = data.title
+        ourServices_modal_middle_box_content_description.textContent = ''
+        ourServices_modal_middle_box_content_description.textContent = data.description
+
+        // biome-ignore lint/complexity/noForEach: <explanation>
+        data.points.forEach((text) => {
+                const sectionElement = document.createElement('section');
+                const paragraphElement = document.createElement('p');
+                const headingElement = document.createElement('h4');
+                paragraphElement.textContent = '-';
+                headingElement.textContent = text;
+                sectionElement.appendChild(paragraphElement);
+                sectionElement.appendChild(headingElement);
+                document.getElementById('ourServices_modal_middle_box_content_points').appendChild(sectionElement);
+            })
+            
+    })
+}
