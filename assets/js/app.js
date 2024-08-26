@@ -219,30 +219,34 @@ for (let index = 1; index <= our_team_section_team_cards_div_length_child; index
     })
 }
 
-// const feature_right_element_left_title_btn_data = [
-//     {
-//         num: 1,
-//         title: 'Discovery & Actionable Insights',
-//         description: 'Developing a future-proof business line; we help by answering your unknowns, challenging your view of what is possible and by identifying linkages of emerging technologies with existing & new markets',
-//     },
-//     {
-//         num: 2,
-//         title: 'Positioning & Strategy',
-//         description: 'Make Informed Selections. Develop Game Plans: We leverage deep rooted techno-commercial insights and work together in developing action plans to help you meet your strategic business objectives.',
-//     },
-//     {
-//         num: 3,
-//         title: 'Implementation & Driving Disruption',
-//         description: 'Deliver business impact. We help our clients navigate uncertainties and assist in implementing technologies and business models to solve existing business challenges, address strategic growth objectives or be the disruptors in their markets.',
-//     },
-// ]
+const feature_right_element_left_title_btn__dot_data = [
+    {
+        num: 1,
+        title: 'Discovery & Actionable Insights',
+        description: 'Developing a future-proof business line; we help by answering your unknowns, challenging your view of what is possible and by identifying linkages of emerging technologies with existing & new markets',
+    },
+    {
+        num: 2,
+        title: 'Positioning & Strategy',
+        description: 'Make Informed Selections. Develop Game Plans: We leverage deep rooted techno-commercial insights and work together in developing action plans to help you meet your strategic business objectives.',
+    },
+    {
+        num: 3,
+        title: 'Implementation & Driving Disruption',
+        description: 'Deliver business impact. We help our clients navigate uncertainties and assist in implementing technologies and business models to solve existing business challenges, address strategic growth objectives or be the disruptors in their markets.',
+    },
+]
 
-// <Arr>.forEach((element) => {
+const feature_right_element_right_featurs_btn_an_text = document.querySelectorAll('.feature_right_element_right_featurs_btn_an_text')
+const feature_right_element_right_featurs_btn_an_text_phone = document.querySelectorAll('.feature_right_element_right_featurs_btn_an_text_phone')
+
+// biome-ignore lint/complexity/noForEach: <explanation>
+// <arr>.forEach((text) => {
 //     const sectionElement = document.createElement('section');
 //     const paragraphElement = document.createElement('p');
 //     const headingElement = document.createElement('h4');
 //     paragraphElement.textContent = '-';
-//     headingElement.textContent = element;
+//     headingElement.textContent = text;
 //     sectionElement.appendChild(paragraphElement);
 //     sectionElement.appendChild(headingElement);
 //     document.getElementById('ourServices_modal_middle_box_content_points').appendChild(sectionElement);

@@ -360,7 +360,7 @@ body {
     &>div {
         display: flex;
         padding: 1.5em 2em;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
 
         &>h4 {
@@ -748,6 +748,12 @@ padding-bottom: 5em;
             }
         }
     }
+}
+.heroSection_getStarted_text{
+    background-color: rgb(214, 21, 35);
+    padding: 0.6em 1em;
+    font-size: large;
+    font-weight: 600;
 }
 
 
